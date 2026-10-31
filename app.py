@@ -12,10 +12,10 @@ WORD, ENC = PHRASE.replace(" ", ""), ENC_PHRASE.replace(" ", "")
 HINT_PEN = 30  # hint penalty in seconds
 
 Q = [
-    {"q": "A bank has past transactions, each labeled “fraud” or “legit”, and wants a model that flags new ones. What type of learning is this? (___ Learning)",
-     "a": ["supervised", "supervisedlearning"], "n": 10, "h": "The data comes with ready-made answers"},
-    {"q": "A store has purchase data with no labels and wants to discover customer groups it doesn’t know yet. What type of learning is this? (___ Learning)",
-     "a": ["unsupervised", "unsupervisedlearning"], "n": 12, "h": "No ready-made answers. Starts with “Un”"},
+        {"q": "Which clustering algorithm can detect outliers and does not require specifying the number of clusters in advance?",
+     "a": ["dbscan"], "n": 6, "h": "It starts with D and is based on density"},
+   {"q": "Which clustering method uses a tree-like diagram to show how clusters are formed?",
+    "a": ["dendrogram"], "n": 10, "h": "It starts with D and looks like a tree"},
     {"q": "Which unsupervised algorithm splits the data into K groups around centers called centroids?",
      "a": ["kmeans"], "n": 7, "h": "Starts with K and ends with “Means”"},
     {"q": "A supervised algorithm that classifies a new item by looking at its closest neighbors and taking a vote. What is its short name?",
